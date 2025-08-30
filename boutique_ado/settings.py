@@ -29,7 +29,10 @@ SECRET_KEY = 'django-insecure-fg_ei%x+s!f7lv5cn=g&=5r91b)2$pipi#&)r_dsy)ir60x!gk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1', # vs code preview
+    'localhost', # listen for stripe webhooks
+]
 
 APPEND_SLASH = False
 
